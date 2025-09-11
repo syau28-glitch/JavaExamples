@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Microwave
 {
     //attributes
@@ -46,9 +48,19 @@ public class Microwave
     {
 
     }
+    public String microwaveBrand()
+    {
+        System.out.println("Enter the brand of your microwave: ");
+        Scanner scan = new Scanner(System.in);
+        String brand = scan.next();
+        scan.close();
+        return brand;
+    }
+
     public static void main(String[] args)
     {
         Microwave superCoolMicrowave = new Microwave("Samsung", 800);
+        //superCoolMicrowave.brand = superCoolMicrowave.microwaveBrand();
         System.out.println("Your microwave was made by " + superCoolMicrowave.brand);
         superCoolMicrowave.cook30();
         superCoolMicrowave.cook(3000, 700);
