@@ -13,6 +13,6 @@ public class Main
         System.out.println(LanguageHelper.salutation());*/
         Microwave fred = new Microwave("BFA", 1000);
         System.out.print("bob: " + bob);
-        System.out.println(", fred: " +fred);
+        System.out.println(", fred: " + fred);
     }
 }
